@@ -1,10 +1,10 @@
-name: Auth Server CI/CD Pipeline
+name: Auth Server main CI/CD Pipeline
 
 on:
   push:
-    branches: [ "main", "develop" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "main", "develop" ]
+    branches: [ "main" ]
 
 jobs:
   build:
