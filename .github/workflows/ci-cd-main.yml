@@ -72,5 +72,5 @@ jobs:
           docker pull ${{ secrets.DOCKER_USERNAME }}/cantech:${{ github.sha }}
           docker run -d --name backend-service -p 8080:8080 \
           -e SPRING_PROFILES_ACTIVE=prod \
-          -e CONFIG_SERVER_URL=${{ secrets.CONFIG_SERVER_URL }} \
+          -e CONFIG_SERVER_URL="${{ secrets.CONFIG_SERVER_URL }}" \
           ${{ secrets.DOCKER_USERNAME }}/cantech:${{ github.sha }}
