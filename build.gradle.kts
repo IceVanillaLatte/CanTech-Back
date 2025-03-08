@@ -43,6 +43,7 @@ dependencies {
 
 	// Spring Cloud Config
 	implementation("org.springframework.cloud:spring-cloud-starter-config")
+	testImplementation("com.h2database:h2")
 }
 
 dependencyManagement {
