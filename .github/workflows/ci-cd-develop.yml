@@ -1,4 +1,4 @@
-name: Auth Server develop CI/CD Pipeline
+name: Backend Server develop CI/CD Pipeline
 
 on:
   push:
